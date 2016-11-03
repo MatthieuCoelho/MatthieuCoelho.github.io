@@ -1,0 +1,17 @@
+﻿@import '../../variable.scss';
+.Vie{
+    margin:2px;
+    width:64px;
+    height:64px;
+    .select{
+        position: absolute;
+        content: '';
+        top:2px;
+        width:64px;
+        height:64px;
+        background-image : url($ressource+"vies/cadre.png");
+        background-size: 64px 64px;
+        background-repeat: no-repeat;
+        pointer-events: none;
+    }
+}

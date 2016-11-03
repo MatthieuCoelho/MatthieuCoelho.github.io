@@ -1,0 +1,27 @@
+﻿@import '../../variable.scss';
+
+.PauseMenu{
+    margin: auto;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+
+    background-image :url($ressource+"interface/fond_menu.svg");
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:contain;
+    
+    overflow: auto;
+    outline: none;
+    padding: 20px;
+
+    width: 300px;
+    height:600px;
+
+    .Bouton{
+        width:50px;
+        height:20px;
+        background-image :url($ressource+"interface/fond_bouton_menu.svg");
+        background-repeat:no-repeat;
+        background-size:contain;
+    }
+}

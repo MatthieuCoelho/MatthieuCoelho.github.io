@@ -1,0 +1,37 @@
+@import '../../variable.scss';
+
+.Jeu{
+    .Top{
+        top:5px;
+        left:5px;
+        display:flex;
+        justify-content:space-between;
+        .boutonPause{
+            top:5px;
+            right:5px;
+            position:absolute;
+            width:45px;
+            height:45px;
+            background-size:cover;
+            background-image:url($ressource+"interface/bouton_pause.svg");
+        }
+    }
+
+    .gridVie{
+        display:flex;
+        top: 50%;
+        position: absolute;
+        justify-content: center;
+        vertical-align: middle;
+        width: 100%;
+    }
+
+    .gridSort{
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        bottom: 10px;
+        width: 100%;
+    }
+
+}

@@ -1,0 +1,43 @@
+@import '../../variable';
+.Sort{
+    display: flex;
+    width:64px;
+    height:64px;
+    color:white;
+    font-size:30px;
+
+    span{
+        margin:auto;
+    }
+}
+
+.Hot{
+    background-image: url($ressource+"sorts/hot_enable.png");
+}
+.Hot.cd{
+    background-image: url($ressource+"sorts/hot_disable.png");
+}
+.Normal{
+    background-image: url($ressource+"sorts/normal_enable.png");
+}
+.Normal.cd{
+    background-image: url($ressource+"sorts/normal_disable.png");
+}
+.Flash{
+    background-image: url($ressource+"sorts/flash_enable.png");
+}
+.Flash.cd{
+    background-image: url($ressource+"sorts/flash_disable.png");
+}
+.Multi{
+    background-image: url($ressource+"sorts/multi_enable.png");
+}
+.Multi.cd{
+    background-image: url($ressource+"sorts/multi_disable.png");
+}
+.Heroic{
+    background-image: url($ressource+"sorts/heroic_enable.png");
+} 
+.Heroic.cd{
+    background-image: url($ressource+"sorts/heroic_disable.png");
+} 
