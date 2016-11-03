@@ -3,7 +3,6 @@ import React from 'react'
 import { connect } from 'react-redux';
 import Sorts from '../../Data/Sorts.jsx';
 import Tooltip from 'rc-tooltip';
-import Tappable from 'react-tappable';
 
 class Sort extends React.Component {
     constructor(props) {
