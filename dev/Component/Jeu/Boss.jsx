@@ -91,7 +91,7 @@ class Boss extends React.Component {
             orientation="horizontal";
             size = this.state.vieCourante*100/this.state.vie;
         }
-        return (<ProgressBar orientation={orientation} niveau={this.props.niveau} R="0" G="0" B="255" size={size}/>);
+        return (<ProgressBar orientation={orientation} niveau={this.props.niveau} R="249" G="105" B="14" size={size}/>);
     }
     render() {
        return (

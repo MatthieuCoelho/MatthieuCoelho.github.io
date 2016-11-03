@@ -1,5 +1,14 @@
 @import '../../variable.scss';
 
+.overlayPauseMenu{
+    position          : fixed;
+    top               : 0;
+    left              : 0;
+    right             : 0;
+    bottom            : 0;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
 .Jeu{
     .Top{
         top:5px;
@@ -12,11 +21,10 @@
             position:absolute;
             width:45px;
             height:45px;
-            background-size:cover;
-            background-image:url($ressource+"interface/bouton_pause.svg");
+            background:url($ressource+"interface/bouton_pause.png");
         }
     }
-
+    
     .gridVie{
         display:flex;
         top: 50%;

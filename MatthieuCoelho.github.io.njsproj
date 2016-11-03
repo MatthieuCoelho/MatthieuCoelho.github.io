@@ -36,7 +36,6 @@
     <Content Include="dev\Component\Aide.jsx" />
     <Content Include="dev\Component\App.jsx" />
     <Content Include="dev\Component\Aventure.jsx" />
-    <Content Include="dev\Component\Jeu.scss" />
     <Content Include="dev\Component\Jeu\Boss.jsx" />
     <Content Include="dev\Component\Jeu\Boss.scss" />
     <Content Include="dev\Component\Jeu\CircularProgressBar.jsx" />
@@ -65,13 +64,20 @@
     <Content Include="indexdev.html" />
     <Content Include="package.json" />
     <Content Include="README.md" />
+    <Content Include="ressources\background\background1.png" />
+    <Content Include="ressources\background\background2.png" />
+    <Content Include="ressources\background\background3.png" />
+    <Content Include="ressources\background\background4.png" />
+    <Content Include="ressources\background\background5.png" />
+    <Content Include="ressources\background\background6.png" />
+    <Content Include="ressources\background\background7.png" />
+    <Content Include="ressources\background\backgroundmain.png" />
     <Content Include="ressources\interface\bouton_pause.svg" />
     <Content Include="ressources\interface\fond_bouton_menu.png" />
     <Content Include="ressources\interface\fond_bouton_menu.svg" />
     <Content Include="ressources\interface\fond_menu.png" />
     <Content Include="ressources\interface\fond_menu.svg" />
     <Content Include="ressources\interface\png\Button.png" />
-    <Content Include="ressources\interface\png\README.txt" />
     <Content Include="ressources\interface\png\Windows.png" />
     <Content Include="ressources\interface\svg\Button.svg" />
     <Content Include="ressources\interface\svg\Windows.svg" />
@@ -100,6 +106,7 @@
     <Folder Include="ressources\interface\" />
     <Folder Include="ressources\interface\png\" />
     <Folder Include="ressources\interface\svg\" />
+    <Folder Include="ressources\background\" />
     <Folder Include="ressources\sorts\" />
     <Folder Include="ressources\vies\" />
   </ItemGroup>

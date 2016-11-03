@@ -18,24 +18,26 @@ class PauseMenu extends React.Component {
         });
         if(!joueurMort)
         {
-            return (<div className="bouton" onClick={()=>this.props.resume()}>Reprendre</div>)
+            return (<div className="bouton" onClick={() => this.props.resume()}><label>Reprendre</label></div>)
         }
         return "";
     }
     renderRecommencer(){
         if(this.props.niveauRecommencerPossible > 1){
-            return (<div className="bouton" onClick={()=>this.props.restart(this.props.niveauRecommencerPossible)}>{"Recommencer au niveau "+this.props.niveauRecommencerPossible}</div>)
+            return (<div className="bouton" onClick={() => this.props.restart(this.props.niveauRecommencerPossible)}><label>{"Recommencer au niveau " + this.props.niveauRecommencerPossible}</label></div>)
         }
         return "";
     }
     render() 
     {
         return(
-           <div className="PauseMenu">
-               {this.renderReprendre()}
-               {this.renderRecommencer()}
-               <div className="bouton" onClick={()=>this.props.restart(1)}>Recommencer</div>
-               <div className="bouton" onClick={()=>this.props.router.push("")}>Menu principal</div>
+            <div className="PauseMenu">
+                <div className="boutons">
+                   {this.renderReprendre()}
+                   {this.renderRecommencer()}
+                   <div className="bouton" onClick={() => this.props.restart(1)}><label>Recommencer</label></div>
+                   <div className="bouton" onClick={() => this.props.router.push("")}><label>Menu principal</label></div>
+               </div>
            </div>
         );
     }

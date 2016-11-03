@@ -25,7 +25,7 @@ class ProgressBar extends React.Component {
             return (<CircularProgressbar percentage={this.props.size} text={this.props.niveau}/>);
         }
         this.styleProgress={
-            backgroundColor : "rgba("+this.props.R+","+this.props.G+","+this.props.B+",0.1)",
+            backgroundColor : "rgba("+this.props.R+","+this.props.G+","+this.props.B+",0.2)",
         }
         return (
             <div style={this.styleProgress} className="ProgressBar">

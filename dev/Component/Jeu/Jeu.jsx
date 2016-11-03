@@ -58,7 +58,7 @@ class Jeu extends React.Component {
                 <Tutoriel id="3" placement="top">
                     {this.renderSorts()}
                 </Tutoriel>
-                <Modal isOpen={this.props.isPause} className="fondPauseMenu">
+                <Modal isOpen={this.props.isPause} className="fondPauseMenu" overlayClassName="overlayPauseMenu">
                     {this.renderPauseMenu()}
                 </Modal>
             </div>

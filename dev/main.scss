@@ -1,11 +1,14 @@
 ﻿@import 'variable.scss';
 html{
-   // background-color: $fondPrincipal;
+    //background-color: $fondPrincipal;
     //image de 1440px / 2280px à mettre
     body {
-        background-color: $fondJeu;
+        background :url("../ressources/background/backgroundmain.png");
+        background-repeat: no-repeat;
+        background-size:100% 100%;
+        background-position:center center;
         /*
-        margin-left:auto;
+        margin-left:auto; 
         margin-right:auto;
         width:960px;
         height:1440px;*/
