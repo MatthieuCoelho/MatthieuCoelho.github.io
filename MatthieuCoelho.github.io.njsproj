@@ -60,6 +60,8 @@
     <Content Include="dev\Redux\store.jsx" />
     <Content Include="dev\Utils\TaskTimer.jsx" />
     <Content Include="dev\variable.scss" />
+    <Content Include="df01e0b3d5b6f3bd0c23eeb405c703f7.png" />
+    <Content Include="e9248f0a2abc06c8a50499c7f6951d68.png" />
     <Content Include="index.html" />
     <Content Include="indexdev.html" />
     <Content Include="package.json" />
