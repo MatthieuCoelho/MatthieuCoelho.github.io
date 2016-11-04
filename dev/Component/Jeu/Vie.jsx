@@ -8,7 +8,7 @@ class Vie extends React.Component {
     constructor(props) {
         super(props);
     }
-    renderProgress(vie){
+    renderProgress(vie) {
         if(vie.valeur==0){
             return (
                 <ProgressBar orientation="vertical" R="0" G="0" B="0" size={100}/>
@@ -19,18 +19,12 @@ class Vie extends React.Component {
             );
         }      
     }
-    renderSelect(vie){
-        if(vie.select){
-            return ( <div className="select">
-                </div>);
-        }
-    }
     render() {
         var vie = this.props.vies[this.props.id]
         return (
-            <div className={vie.select?"Vie select":"Vie"} onClick={()=>this.props.selectVie(vie.id)}>
+            <div className="Vie" onClick={()=>this.props.selectVie(vie.id)}>
                 {this.renderProgress(vie)}
-                {this.renderSelect(vie)}
+                <div id={vie.select ? "select" : ""}></div>
             </div>
         );
     }
