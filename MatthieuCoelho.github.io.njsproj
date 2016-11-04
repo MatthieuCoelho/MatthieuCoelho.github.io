@@ -59,8 +59,6 @@
     <Content Include="dev\Redux\store.jsx" />
     <Content Include="dev\Utils\TaskTimer.jsx" />
     <Content Include="dev\variable.scss" />
-    <Content Include="df01e0b3d5b6f3bd0c23eeb405c703f7.png" />
-    <Content Include="e9248f0a2abc06c8a50499c7f6951d68.png" />
     <Content Include="index.html" />
     <Content Include="indexdev.html" />
     <Content Include="package.json" />
@@ -73,7 +71,9 @@
     <Content Include="ressources\background\background6.png" />
     <Content Include="ressources\background\background7.png" />
     <Content Include="ressources\background\backgroundmain.png" />
+    <Content Include="ressources\interface\bouton_pause.png" />
     <Content Include="ressources\interface\bouton_pause.svg" />
+    <Content Include="ressources\interface\bouton_pause_selec.svg" />
     <Content Include="ressources\interface\fond_bouton_menu.png" />
     <Content Include="ressources\interface\fond_bouton_menu.svg" />
     <Content Include="ressources\interface\fond_menu.png" />

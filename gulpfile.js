@@ -43,8 +43,8 @@ gulp.task("dev-server", function (callback) {
                     loader: "style-loader!css-loader"
                 },
                 {
-                    test: /\.png$/,
-                    loader: "url-loader?limit=100000"
+                    test: /\.(png|jpg)$/,
+                    loader: "url-loader?limit=1000000"
                 },
                 { 
                     test: /\.svg$/, 
@@ -104,8 +104,8 @@ gulp.task("prod", function () {
                         loader: "style-loader!css-loader"
                     },
                     {
-                        test: /\.png$/,
-                        loader: "url-loader?limit=100000"
+                        test: /\.(png|jpg)$/,
+                        loader: "url-loader?limit=1000000"
                     },
                     { 
                         test: /\.svg$/, 
