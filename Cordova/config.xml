@@ -3,7 +3,6 @@
   <name>Heal Me</name>
   <description>Heal Me</description>
   <author href="http://cordova.io" email="dev@cordova.apache.org">Matthieu Coelho</author>
-  <vs:is-from-base-template>true</vs:is-from-base-template>
   <vs:template-name>BlankJS</vs:template-name>
   <content src="index.html" />
   <access origin="*" />
