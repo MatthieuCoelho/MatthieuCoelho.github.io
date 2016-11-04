@@ -21,10 +21,11 @@ class Vie extends React.Component {
     }
     render() {
         var vie = this.props.vies[this.props.id]
+        var display = vie.select ? displayNone : "";
         return (
             <div className="Vie" onClick={()=>this.props.selectVie(vie.id)}>
                 {this.renderProgress(vie)}
-                <div id={vie.select ? "select" : ""}></div>
+                <div class="select" style={display}></div>
             </div>
         );
     }
