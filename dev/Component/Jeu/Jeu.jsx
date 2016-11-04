@@ -24,9 +24,9 @@ class Jeu extends React.Component {
             return("");
         }
     }
-    renderVies(){
+    renderVies() {
         var vies = this.props.vies.map(function (vie) {
-            return (<Vie key={vie.id} id={vie.id}/>)
+            return (<Vie key={vie.id} id={vie.id} valeur={vie.valeur} select={vie.select}/>)
         })
         return (<div className="gridVie">
                     {vies}

@@ -4,37 +4,30 @@ import ProgressBar from './ProgressBar.jsx'
 import { connect } from 'react-redux';
 
 
-class Vie extends React.Component {
+class Vie extends React.PureComponent {
     constructor(props) {
         super(props);
     }
-    renderProgress(vie) {
-        if(vie.valeur==0){
+    renderProgress() {
+        if(this.props.valeur==0){
             return (
                 <ProgressBar orientation="vertical" R="0" G="0" B="0" size={100}/>
             );
         }else{
             return (
-                <ProgressBar orientation="vertical" R="255" G="0" B="0" size={vie.valeur}/>
+                <ProgressBar orientation="vertical" R="255" G="0" B="0" size={this.props.valeur}/>
             );
         }      
     }
     render() {
-        var vie = this.props.vies[this.props.id]
-        var display = vie.select ? displayNone : "";
+        var visibility = this.props.select ? {} : {visibility: "hidden"};
         return (
-            <div className="Vie" onClick={()=>this.props.selectVie(vie.id)}>
-                {this.renderProgress(vie)}
-                <div class="select" style={display}></div>
+            <div className="Vie" onTouchStart={() => this.props.selectVie(this.props.id)}>
+                {this.renderProgress()}
+                <div className="select" style={visibility}></div>
             </div>
         );
     }
-}
-
-const mapStateToProps = function (state) {
-    return {
-        vies: state.core.vies
-    };
 }
 
 const mapDispatchToProps = (dispatch) => {
@@ -45,4 +38,4 @@ const mapDispatchToProps = (dispatch) => {
     }
 }
 
-export default connect(mapStateToProps,mapDispatchToProps)(Vie);
+export default connect(null,mapDispatchToProps)(Vie);
