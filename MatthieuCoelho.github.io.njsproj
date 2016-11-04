@@ -35,7 +35,6 @@
     <Content Include="dev\Component\Accueil.jsx" />
     <Content Include="dev\Component\Aide.jsx" />
     <Content Include="dev\Component\App.jsx" />
-    <Content Include="dev\Component\Aventure.jsx" />
     <Content Include="dev\Component\Jeu\Boss.jsx" />
     <Content Include="dev\Component\Jeu\Boss.scss" />
     <Content Include="dev\Component\Jeu\CircularProgressBar.jsx" />

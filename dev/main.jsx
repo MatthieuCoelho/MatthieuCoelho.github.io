@@ -10,7 +10,6 @@ import {syncHistoryWithStore} from 'react-router-redux'
 import App from './Component/App.jsx'
 import Jeu from './Component/Jeu/Jeu.jsx'
 import Accueil from './Component/Accueil.jsx'
-import Aventure from './Component/Aventure.jsx'
 import Aide from './Component/Aide.jsx'
 
 var history = syncHistoryWithStore(hashHistory , store)
@@ -21,7 +20,6 @@ ReactDOM.render(
             <Route path='/' component={App}>
                 <IndexRoute component={Accueil} />
                 <Route path="Jeu" component={Jeu} />
-                <Route path="Aventure" component={Aventure} />
                 <Route path="Aide" component={Aide} />
             </Route>
         </Router>
